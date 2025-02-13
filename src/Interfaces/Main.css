@@ -44,3 +44,14 @@
   margin-left: 10px;
   line-height: 20px;
 }
+
+.WhiteButton {
+  height: 250px;
+  width: 150px;
+  background-color: white;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}

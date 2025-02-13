@@ -1,5 +1,9 @@
 import Background from "../imgs/background_burger.jpeg";
+import { useNavigate } from "react-router-dom";
+import "../Main.css";
+
 function OrderBurger1() {
+  const navigate = useNavigate();
   return (
     <div>
       <div style={{ height: "580px", overflow: "hidden" }}>
@@ -30,7 +34,9 @@ function OrderBurger1() {
             justifyContent: "center",
             alignItems: "center",
             marginTop: "30px",
+            cursor: "pointer",
           }}
+          onClick={() => navigate("/OrderBurger2")}
         >
           주문하시려면 터치하세요.
         </div>

@@ -5,7 +5,11 @@ import { useNavigate } from "react-router-dom";
 const SelectButton = (props) => {
   const navigate = useNavigate();
   return (
-    <div className="btn" style={{ backgroundColor: `${props.color}` }} onClick={() => navigate("/OrderBurger1")}>
+    <div
+      className="btn"
+      style={{ backgroundColor: `${props.color}`, cursor: "pointer" }}
+      onClick={() => navigate("/OrderBurger1")}
+    >
       <div>
         <img src={props.src} alt="" width="80px" />
         <p>{props.title}</p>
